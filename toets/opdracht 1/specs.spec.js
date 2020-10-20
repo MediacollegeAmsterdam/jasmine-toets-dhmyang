@@ -1,26 +1,30 @@
-describe('Testje 1', function() {
-    it('should have the correct title', function () {
-        expect(document.title).toBe('Voorbeeld toets');
-        expect(document.charset).toBe('UTF-8');
-    });
+describe("Check if titel & charset is right", function () {
+  it("test of titel & charset is", function () {
+    expect(document.title).toBe("Voorbeeld toets");
+    expect(document.charset).toBe("UTF-8");
+  });
 });
 
-describe('Testje 2', function () {
-    it('should test', function () {
-        expect(unitTest.item).toBe('voorbeeld');
-        it('should test', function () {
-            expect(unitTest.nummer).toEqual(3);
-        });
-    });
+describe("check if item inside>unitest is same as item", function () {
+  it("check item", function () {
+    expect(unitTest.item).toBe("voorbeeld");
+  });
 });
 
-describe('Testje 3', function () {
-    it('should test', function () {
-        expect(unitTest.beschrijving).toBe('Beschrijving');
-        describe('Testje 4', function () {
-            it('should test', function () {
-                expect(unitTest.boodschap).toEqual('Hallo');
-            });
-        });
-    });
+describe("check if nummer inside>unitTest is same as 2", function () {
+  it("check nummer", function () {
+    expect(unitTest.nummer).toEqual(2);
+  });
+});
+
+describe("check if beschrijving inside>unitTest is same as Beschrijving", function () {
+  it("check beschrijving", function () {
+    expect(unitTest.beschrijving).toBe("Beschrijving");
+  });
+});
+
+describe("check if boodschap inside > unitTest is same as Hallo", function () {
+  it("check boodschap", function () {
+    expect(unitTest.boodschap).toEqual("Hallo");
+  });
 });
